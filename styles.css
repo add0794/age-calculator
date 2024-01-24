@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+    padding: 20px;
+    /* background-color: */
+}
+
+.container {
+    font-family: "Montserrat", sans-serif;
+    /* background-color: #808080; */
+    background-color: #FAEBD7;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form {
+    /* color: red; */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; 
+    align-items: center; 
+    text-align: center; Additional centering for text */
+    
+    /* column-gap: 30px; */
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    border: solid;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* #DOB {
+    display: block;
+    text-align: center;
+} */

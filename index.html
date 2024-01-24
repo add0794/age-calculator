@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <div class="form">
+            <label for="day">Enter your date of birth:</label>
+            <!-- for needs to be set as the same values as id and name to indicate they are associated with those elements. -->
+            <input type="date" id="day" name="day"> 
+            <!-- It's common practice to set the id and name as the same for readability on the client- and server=sides. -->
+        </div>
+        <button type="submit" id="btn">Calculate Age</button>
+        <p class="result">Your birthday is...</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
