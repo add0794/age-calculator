@@ -3,7 +3,7 @@ const btn = document.getElementById("btn");
 const birthday = document.getElementById("day");
 const resultParagraph = document.getElementsByClassName("result")[0];
 btn.addEventListener("click", () => {
-    const birthdayValue = document.getElementById('day').value;
+    const birthdayValue = birthday.value;
     const birthdayDate = new Date(birthdayValue);
     const today = new Date();
     if (birthdayValue === "") {
@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
         if (today.getMonth() > birthdayDate.getMonth() ||
             (today.getMonth() === birthdayDate.getMonth() && today.getDate() >= birthdayDate.getDate())) {
             age = today.getFullYear() - birthdayDate.getFullYear();
-            document.getElementById('resultParagraph').textContent = `You are ${age} years old.`;
+            resultParagraph.textContent = `You are ${age} years old.`;
             alert(`You are ${age} years old.`);
         }
         else {

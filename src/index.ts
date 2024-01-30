@@ -3,7 +3,7 @@ const birthday = document.getElementById("day") as HTMLInputElement;
 const resultParagraph = document.getElementsByClassName("result")[0] as HTMLParagraphElement; // Access the first element in the collection
 
 btn.addEventListener("click", (): void => {
-    const birthdayValue: string = (document.getElementById('day') as HTMLInputElement).value;
+    const birthdayValue: string = birthday.value;
     const birthdayDate: Date = new Date(birthdayValue);
     const today: Date = new Date();
 
@@ -16,7 +16,7 @@ btn.addEventListener("click", (): void => {
             (today.getMonth() === birthdayDate.getMonth() && today.getDate() >= birthdayDate.getDate())) {
             // Birthday has occurred this year or it's today
             age = today.getFullYear() - birthdayDate.getFullYear();
-            (document.getElementById('resultParagraph') as HTMLParagraphElement).textContent = `You are ${age} years old.`;
+            resultParagraph.textContent = `You are ${age} years old.`;
             alert(`You are ${age} years old.`);
         } else {
             // Birthday hasn't occurred yet this year
